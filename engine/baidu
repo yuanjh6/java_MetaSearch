@@ -1,0 +1,10 @@
+name=baidu
+baseurl=http://www.baidu.com/s?
+url=http://www.baidu.com/s?wd=#KEYWORD#&pn=#PAGE#0
+perpage=10
+charset=utf-8
+headtag=400-800-8888</font><br/>
+foottag=<br clear="all"><p id="page" >
+splittag=</td></tr></table>
+regexp=href="(.*?)".*? >(.*?)<font size=-1>(.*?)</font>.*?(\d{4}-\d{1,2}-\d{1,2})
+regexpinfo=url:1,title:2,summary:3,date:4

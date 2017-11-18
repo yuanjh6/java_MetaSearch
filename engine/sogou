@@ -1,0 +1,10 @@
+name=sogou
+baseurl=http://www.sogou.com/web?
+url=http://www.sogou.com/web?query=#KEYWORD#&page=#PAGE#
+perpage=10
+charset=utf-8
+headtag=<div><div class="results" >
+foottag=<table id="hint_container" class="hint">
+splittag=<div class="rb">
+regexp=href="(.*?)">.*?<!--awbg\d-->(.*?)</a>.*?<!--summary_beg-->(.*?)<!--summary_end-->.*?<!--resultinfodate:(.*?)-->
+regexpinfo=url:1,title:2,summary:3,date:4
